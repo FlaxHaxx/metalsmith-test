@@ -1,5 +1,5 @@
 
-# Websitevfor www.northbricks.com
+# The www.northbricks.com website
 [![Build Status](https://travis-ci.org/FlaxHaxx/metalsmith-test.svg)](https://travis-ci.org/FlaxHaxx/metalsmith-test)
 [![Dependency Status](https://img.shields.io/david/flaxhaxx/metalsmith-test.svg?style=flat-square)](https://david-dm.org/flaxhaxx/metalsmith-test)
 [![peerDependency Status](https://img.shields.io/david/peer/flaxhaxx/metalsmith-test.svg?style=flat-square)](https://david-dm.org/flaxhaxx/metalsmith-test?type=peer)
