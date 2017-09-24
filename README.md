@@ -16,5 +16,6 @@ make build
 
 Build with `node`.
 ```sh
+npm install
 node index.js
 ```
