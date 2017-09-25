@@ -29,8 +29,9 @@ h2, h3 {
     padding-left: 15px;
 }
 
+/* Header */
 header {
-    background: url(../images/hero-bg-2.jpg);
+    background: url(../images/hero-bg.jpg);
 /*    background-attachment: fixed;*/
     background-position:center;
     background-size:cover;
@@ -52,11 +53,13 @@ header .section-description {
     font-weight:400
 }
 
+/* Sections */
 section {
     padding: 65px 0 85px;
     text-align: center;
 }
 
+/* News section */
 #news {
     background-color: #222f36;
     padding-top: 40px;
@@ -69,10 +72,21 @@ section {
     color: #fff;
 }
 
+/* Team section */
 #team {
     background: url(../images/pattern.png);
 }
 
+.team-member-text {
+    padding-top: 25px;
+}
+
+.team-social-icon {
+    padding: 7px;
+    width: 35px;
+}
+
+/* Footer */
 footer {
     background-color: #464646;
     padding: 20px 0;
@@ -80,6 +94,17 @@ footer {
 
 footer a, footer a:hover {
     color: #fff;
+}
+
+.social-links {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.social-link {
+    margin: 0 5px;
+    width: 25px;
+    float: none;
 }
 
 /* TODO */
@@ -455,14 +480,6 @@ ul {
     color: #747474;
 }
 
-.team-member-text {
-    padding-top: 25px;
-}
-
-.team-social-icon {
-    padding: 7px;
-}
-
 .blue-section {
     background-color: #0ABCEB;
     color: white;
@@ -537,16 +554,6 @@ ul {
 .webscope {
     text-align: center;
     margin-top: -5px;
-}
-
-.social-links {
-    float: none;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.social-link {
-    margin-right: 15px;
 }
 
 .strips {
