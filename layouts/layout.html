@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{title}}</title>
     <meta name="Nova theme" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,700,300,300italic|Lato:300,400,700,900|Poppins:300,400,500,600,700" />
     <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="assets/css/responsive.css"/>
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css?ver=4.5.0" />
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="header-container header">
-                <a class="navbar-brand logo" href="#"><img class="logo" src="assets/images/logo.png"/></a>
-                <div class="header-right">
-                    <a class="navbar-item" href="#about">{{about.title}}</a>
-                    <a class="navbar-item" href="#news">{{news.title}}</a>
-                    <a class="navbar-item" href="#team">{{team.title}}</a>
-                    <a class="navbar-item" href="#contact">{{contact.title}}</a>
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-toggleable-md navbar-dark">
+                        <a class="navbar-brand" href="#"><img class="logo" src="assets/images/logo.png"/></a>
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="containerNavbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">{{about.title}}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#news">{{news.title}}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#team">{{team.title}}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">{{contact.title}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+            <!--        <div class="hero row">
+                        <div class="col-sm-12">
+                            <h1 class="header-headline bold">{{hero.title}}</h1>
+                            <div class="section-description">{{hero.text}}</div>
+                        </div>
+                    </div>-->
                 </div>
             </div>
-            <div class="hero row">
-                <div class="col-sm-12">
+            <div class="row">
+                <div class="col-12">
                     <h1 class="header-headline bold">{{hero.title}}</h1>
                     <div class="section-description">{{hero.text}}</div>
                 </div>
@@ -63,7 +85,7 @@
         <h2>{{team.text}}</h2>
         <div class="team-container row">
             {{#each team.people}}
-            <div class="col-sm-4 team-member">
+            <div class="col-sm-4 team-member ml-auto mr-auto">
                 <img src="{{this.pic}}"/>
                 <div class="team-member-text">
                     <h4 class="team-member-position light">{{this.title}}</h4>
@@ -94,7 +116,9 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
