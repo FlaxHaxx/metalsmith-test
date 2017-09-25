@@ -27,7 +27,7 @@
                                     <a class="nav-link" href="#about">{{about.title}}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#news">{{news.title}}</a>
+                                    <a class="nav-link" href="#blog">{{blog.title}}</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#team">{{team.title}}</a>
@@ -68,35 +68,42 @@
         </div>
     </section>
 
-    <section id="news">
+    <section id="blog">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2>{{news.title}}</h2>
+            <h2>{{blog.title}}</h2>
+            <p>{{blog.text}}</p>
+            <div class="blog-container row">
+                {{#each blog.posts}}
+                <div class="post col-md-4 team-member ml-auto mr-auto">
+                    {{#if this.pic}}
+                    <img class="post-image" src="{{this.pic}}"/>
+                    {{/if}}
+                    <h4 class="light">{{this.title}}</h4>
+                    <div class="post-entry">{{this.text}}</div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-10 ml-auto mr-auto">{{news.text}}</div>
+                {{/each}}
             </div>
         </div>
     </section>
 
     <section id="team">
-        <h2>{{team.text}}</h2>
-        <div class="team-container row">
-            {{#each team.people}}
-            <div class="col-sm-4 team-member ml-auto mr-auto">
-                <img src="{{this.pic}}"/>
-                <div class="team-member-text">
-                    <h4 class="team-member-position light">{{this.title}}</h4>
-                    <h5 class="bold">{{this.name}}</h5>
-                    <p class="light">{{this.desc}}</p>
-                    <a href="{{this.twitter}}"><img class="team-social-icon" src="assets/images/team-twitter.svg"></a>
-                    <a href="{{this.linkedin}}"><img class="team-social-icon" src="assets/images/team-linkedin.svg"></a>
-                    <a href="{{this.github}}"><img class="team-social-icon" src="assets/images/team-github.svg"></a>
+        <div class="container">
+            <h2>{{team.title}}</h2>
+            <div class="team-container row">
+                {{#each team.people}}
+                <div class="col-md-4 team-member ml-auto mr-auto">
+                    <img class="team-member-pic" src="{{this.pic}}"/>
+                    <div class="team-member-text">
+                        <h4 class="light">{{this.title}}</h4>
+                        <h5 class="bold">{{this.name}}</h5>
+                        <p class="light">{{this.desc}}</p>
+                        <a href="{{this.twitter}}"><img class="team-social-icon" src="assets/images/team-twitter.svg"></a>
+                        <a href="{{this.linkedin}}"><img class="team-social-icon" src="assets/images/team-linkedin.svg"></a>
+                        <a href="{{this.github}}"><img class="team-social-icon" src="assets/images/team-github.svg"></a>
+                    </div>
                 </div>
+                {{/each}}
             </div>
-            {{/each}}
         </div>
     </section>
 

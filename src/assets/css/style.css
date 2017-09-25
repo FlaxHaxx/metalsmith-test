@@ -18,10 +18,14 @@ h1 {
     font-size: 50px;
 }
 
-h2, h3 {
+h2 {
     font-size: 35px;
     line-height: 38px;
     margin: 0 0 55px;
+}
+
+h4 {
+    color: #747474;
 }
 
 .container {
@@ -74,13 +78,17 @@ section {
     text-align: center;
 }
 
-/* News section */
-#news {
+/* Blog section */
+#blog {
     background-color: #222f36;
     padding-top: 40px;
     padding-bottom: 80px;
     padding-bottom: 90px;
     position: relative;
+}
+
+#blog .post {
+    background-color: #fff;
 }
 
 #news h2 {
@@ -90,6 +98,11 @@ section {
 /* Team section */
 #team {
     background: url(../images/pattern.png);
+}
+
+.team-member-pic {
+    border-radius: 100px;
+    width: 200px;
 }
 
 .team-member-text {
@@ -489,10 +502,6 @@ ul {
 .team-member {
     text-align: center;
     padding-bottom: 60px;
-}
-
-.team-member-position {
-    color: #747474;
 }
 
 .blue-section {

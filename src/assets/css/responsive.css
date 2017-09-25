@@ -13,6 +13,11 @@
         float: right;
     }
 
+    /* Blog section */
+    #blog .post:not(:first-child):not(:last-child) {
+        border-left: 20px solid #222f36;
+        border-right: 20px solid #222f36;
+    }
 
 
 
